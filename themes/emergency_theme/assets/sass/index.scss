@@ -40,7 +40,7 @@
       border-right: 4px solid black;
 
       .emergency__main__bottom__item--title {
-        
+        color: white;
       }
     }
     .emergency__main__bottom__item:last-child {
@@ -49,16 +49,20 @@
   }
 }
 
-.emergency__main__top_left {
-  width: 100px;
-
-  .emergency__main__top_left--title {
-
+// MEDITATE
+.emergency__main__top__left {
+  background: white;
+  .emergency__main__top__left--container {
+    .emergency__main__top__left--title {
+      color: white;
+    }
   }
 }
 
+// DO YOU NEED?
 .emergency__main__top__right {
   border-left: 4px solid black;
+  width: 100px;
 
   .emergency__main__top__right__item {
     .emergency__main__top__right__item--title {
