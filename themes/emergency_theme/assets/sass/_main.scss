@@ -12,7 +12,7 @@ body {
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  border: 5px solid black;
+  // border: 5px solid black;
   margin: 0!important;
   background: rgb(253, 253, 253);
 }
@@ -175,10 +175,10 @@ hr {
 }
 
 @media screen and (min-width: 420px) {
-  body {
-    margin: 0.5rem!important;
-    width: initial;
-  }
+  // body {
+  //   margin: 0.5rem!important;
+  //   width: initial;
+  // }
 
   .em-rainbow {
     display: inline-block;
