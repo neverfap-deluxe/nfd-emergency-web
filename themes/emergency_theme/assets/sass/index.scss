@@ -27,24 +27,45 @@
 .emergency__main {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   .emergency__main__top {
     display: flex;
   }
-  .emergency__main__bottom {
-    .emergency__main__bottom__item {
 
+  .emergency__main__bottom {
+    border-top: 4px solid black;
+
+    .emergency__main__bottom__item {
+      border-right: 4px solid black;
+
+      .emergency__main__bottom__item--title {
+        
+      }
+    }
+    .emergency__main__bottom__item:last-child {
+      border-right: none;
     }
   }
 }
 
-.emergency__main__top__right {
-  .emergency__main__top__right__item {
+.emergency__main__top_left {
+  width: 100px;
+
+  .emergency__main__top_left--title {
 
   }
 }
-.emergency__main__top_left {
 
+.emergency__main__top__right {
+  border-left: 4px solid black;
+
+  .emergency__main__top__right__item {
+    .emergency__main__top__right__item--title {
+
+    }
+
+  }
 }
 
 .emergency__footer {
