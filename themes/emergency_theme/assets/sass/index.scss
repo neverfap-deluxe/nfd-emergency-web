@@ -24,16 +24,29 @@
 // @import "_shortcodes.scss";
 
 
+body {
+  position: relative;
+}
+
 .emergency__main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 
   .emergency__main__top {
     display: flex;
   }
 
   .emergency__main__bottom {
+    display: flex;
     border-top: 4px solid black;
 
     .emergency__main__bottom__item {
@@ -51,6 +64,7 @@
 
 // MEDITATE
 .emergency__main__top__left {
+  width: 100%;
   background: white;
   .emergency__main__top__left--container {
     .emergency__main__top__left--title {
@@ -62,7 +76,7 @@
 // DO YOU NEED?
 .emergency__main__top__right {
   border-left: 4px solid black;
-  width: 100px;
+  width: 200px;
 
   .emergency__main__top__right__item {
     .emergency__main__top__right__item--title {
