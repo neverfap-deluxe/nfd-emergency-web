@@ -7,23 +7,28 @@
 
       <!-- TOP -->
       <div class="emergency__main__top">
-        <div class="emergency__main__top__left">
-          <h1 class="emergency__main__top__left--title">
-            Meditate
-          </h1>
+        <!-- MEDITATE -->
+        <div id="meditate" class="emergency__main__top__left">
+          <div class="emergency__main__top__left--container">
+            <h1 class="emergency__main__top__left--title">
+              Meditate
+            </h1>
+          </div>
         </div>
+
+        <!-- RIGHT SIDE BAR -->
         <div class="emergency__main__top__right">
-          <div class="emergency__main__top__right__item">
+          <div id="someone__to__talk__to" class="emergency__main__top__right__item">
             <h3 class="emergency__main__top__right__item--title">
               Need someone to talk to?
             </h3>
           </div>
-          <div class="emergency__main__top__right__item">
+          <div id="need__a__community__to__join" class="emergency__main__top__right__item">
             <h3 class="emergency__main__top__right__item--title">
               Need a community to join?
             </h3>
           </div>
-          <div class="emergency__main__top__right__item">
+          <div id="mental__health__services" class="emergency__main__top__right__item">
             <h3 class="emergency__main__top__right__item--title">
               Mental health resources.
             </h3>
@@ -33,17 +38,17 @@
 
       <!-- BOTTOM -->
       <div class="emergency__main__bottom">
-        <div class="emergency__main__bottom__item">
+        <div id="heres__what__happened" class="emergency__main__bottom__item">
           <h2 class="emergency__main__bottom__item">
             Here's What Happened
           </h2>
         </div>
-        <div class="emergency__main__bottom__item">
+        <div id="heres__what__wont__work" class="emergency__main__bottom__item">
           <h2 class="emergency__main__bottom__item">
             Here's What Won't Work
           </h2>
         </div>
-        <div class="emergency__main__bottom__item">
+        <div id="heres__what__will" class="emergency__main__bottom__item">
           <h2 class="emergency__main__bottom__item">
             Here's What Will
           </h2>
@@ -59,5 +64,41 @@
       </div>
     </footer>
   </body>
-  <script src='/js/emergency.js'></script>
+
+  <script>
+    var meditate = document.querySelector('#meditate');
+
+    var someone__to__talk__to = document.querySelector('#someone__to__talk__to');
+    var need__a__community__to__join = document.querySelector('#need__a__community__to__join');
+    var mental__health__services = document.querySelector('#mental__health__services');
+
+    var heres__what__happened = document.querySelector('#heres__what__happened');
+    var heres__what__wont__work = document.querySelector('#heres__what__wont__work');
+    var heres__what__will = document.querySelector('#heres__what__will');
+
+    meditate.onclick = function(event) {
+
+    };
+
+    someone__to__talk__to.onclick = function(event) {
+
+    };
+    need__a__community__to__join.onclick = function(event) {
+
+    };
+    mental__health__services.onclick = function(event) {
+
+    };
+
+    heres__what__happened.onclick = function(event) {
+
+    };
+    heres__what__wont__work.onclick = function(event) {
+
+    };
+    heres__what__will.onclick = function(event) {
+
+    };
+  </script>
+
 </html>

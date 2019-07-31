@@ -9,6 +9,7 @@ a {
 }
 
 body {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   border: 5px solid black;
@@ -37,9 +38,9 @@ h4 {
   line-height: 1.8rem;
 }
 
-p, b { 
+p, b {
   font-size: 1.1rem;
-  line-height: 1.6rem;    
+  line-height: 1.6rem;
 }
 
 .articles__link {
@@ -129,7 +130,7 @@ hr {
 
 
 .deluxe__font {
-  font-family: 'Parisienne', cursive; 
+  font-family: 'Parisienne', cursive;
 }
 
 .logo__square {
@@ -137,8 +138,8 @@ hr {
   right: 0.2rem;
   top: -1.3rem;
   width: 14px;
-  height: 14px;  
-}  
+  height: 14px;
+}
 
 // EMOJI
 
