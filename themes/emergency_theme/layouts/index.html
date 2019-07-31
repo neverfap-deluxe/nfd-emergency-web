@@ -48,17 +48,17 @@
 
       <!-- BOTTOM -->
       <div class="emergency__main__bottom">
-        <div id="heres__what__happened" class="emergency__main__bottom__item__container--selected">
+        <div id="heres__what__happened" class="emergency__main__bottom__item--selected">
           <h2 class="emergency__main__bottom__item--title">
             Here's What Happened
           </h2>
         </div>
-        <div id="heres__what__wont__work" class="emergency__main__bottom__item__container">
+        <div id="heres__what__wont__work" class="emergency__main__bottom__item">
           <h2 class="emergency__main__bottom__item--title">
             Here's What Won't Work
           </h2>
         </div>
-        <div id="heres__what__will" class="emergency__main__bottom__item__container">
+        <div id="heres__what__will" class="emergency__main__bottom__item">
           <h2 class="emergency__main__bottom__item--title">
             Here's What Will
           </h2>
@@ -74,16 +74,14 @@
           <p>Maybe you're stressed. Maybe you've been feeling depressed. Perhaps you simply didn't get enough sleep last night.</p>
           <p>For whatever reason, you lost balance which is why you're currently struggling to maintain control over your mind.</p>
 
-
-
         </div>
         <div id="heres__what__wont__work__response" class="emergency__main__bottom__responses__item">
-          <h2 class="emergency__main__bottom__item">
+          <h2 class="emergency__main__bottom__responses__item--title">
             Here's What Won't Work
           </h2>
         </div>
         <div id="heres__what__will__response" class="emergency__main__bottom__responses__item">
-          <h2 class="emergency__main__bottom__item">
+          <h2 class="emergency__main__bottom__responses__item--title">
             Here's What Will
           </h2>
         </div>
@@ -102,38 +100,74 @@
   </body>
 
   <script>
+
+    console.log('cake')
     var meditate = document.querySelector('#meditate');
 
-    var someone__to__talk__to = document.querySelector('#someone__to__talk__to');
-    var need__a__community__to__join = document.querySelector('#need__a__community__to__join');
-    var mental__health__services = document.querySelector('#mental__health__services');
+    // var someone__to__talk__to = document.querySelector('#someone__to__talk__to');
+    // var need__a__community__to__join = document.querySelector('#need__a__community__to__join');
+    // var mental__health__services = document.querySelector('#mental__health__services');
 
     var heres__what__happened = document.querySelector('#heres__what__happened');
     var heres__what__wont__work = document.querySelector('#heres__what__wont__work');
     var heres__what__will = document.querySelector('#heres__what__will');
 
+    var heres__what__happened__response = document.querySelector('#heres__what__happened__response');
+    var heres__what__wont__work__response = document.querySelector('#heres__what__wont__work__response');
+    var heres__what__will__response = document.querySelector('#heres__what__will__response');
+
     meditate.onclick = function(event) {
 
     };
 
-    someone__to__talk__to.onclick = function(event) {
+    // someone__to__talk__to.onclick = function(event) {
 
-    };
-    need__a__community__to__join.onclick = function(event) {
+    // };
+    // need__a__community__to__join.onclick = function(event) {
 
-    };
-    mental__health__services.onclick = function(event) {
+    // };
+    // mental__health__services.onclick = function(event) {
 
-    };
+    // };
 
     heres__what__happened.onclick = function(event) {
+      heres__what__happened.classList.remove('emergency__main__bottom__item');
+      heres__what__wont__work.classList.remove('emergency__main__bottom__item--selected');
+      heres__what__will.classList.remove('emergency__main__bottom__item--selected');
+      
+      heres__what__happened.classList.add('emergency__main__bottom__item--selected');
+      heres__what__wont__work.classList.add('emergency__main__bottom__item');
+      heres__what__will.classList.add('emergency__main__bottom__item');
 
+      heres__what__happened__response.style.display = 'block';
+      heres__what__wont__work__response.style.display = 'none';
+      heres__what__will__response.style.display = 'none';
     };
     heres__what__wont__work.onclick = function(event) {
+      heres__what__happened.classList.remove('emergency__main__bottom__item--selected');
+      heres__what__wont__work.classList.remove('emergency__main__bottom__item');
+      heres__what__will.classList.remove('emergency__main__bottom__item--selected');
+      
+      heres__what__happened.classList.add('emergency__main__bottom__item');
+      heres__what__wont__work.classList.add('emergency__main__bottom__item--selected');
+      heres__what__will.classList.add('emergency__main__bottom__item');
 
+      heres__what__happened__response.style.display = 'none';
+      heres__what__wont__work__response.style.display = 'block';
+      heres__what__will__response.style.display = 'none';
     };
     heres__what__will.onclick = function(event) {
+      heres__what__happened.classList.remove('emergency__main__bottom__item--selected');
+      heres__what__wont__work.classList.remove('emergency__main__bottom__item--selected');
+      heres__what__will.classList.remove('emergency__main__bottom__item');
+      
+      heres__what__happened.classList.add('emergency__main__bottom__item');
+      heres__what__wont__work.classList.add('emergency__main__bottom__item');
+      heres__what__will.classList.add('emergency__main__bottom__item--selected');
 
+      heres__what__happened__response.style.display = 'none';
+      heres__what__wont__work__response.style.display = 'none';
+      heres__what__will__response.style.display = 'block';
     };
   </script>
 
