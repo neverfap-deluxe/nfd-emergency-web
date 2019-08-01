@@ -107,7 +107,7 @@
                   Distracting ourselves, such as finding something to keep us busy.
                 </p>
                 <p class="articles__link cursor__default" style="background: #f5f6f6; font-size: 1.2rem;">
-                  Seeking motivation via 
+                  Seeking motivation via
                 </p>
                 <p class="articles__link cursor__default" style="background: #f5f6f6; font-size: 1.2rem;">
                   Pushing through with "willpower"
@@ -116,22 +116,22 @@
               </div>
             </div>
           </div>
-            
-          
+
+
           <div class="emergency__main__bottom__responses--buttons">
             <a href="#emergency__main__bottom" id="heres__what__wont__work__responsePreviousButton" class="emergency__main__bottom__responses--button">
               <h5 class="emergency__main__bottom__responses--title">
                 Previous.
               </h5>
             </a>
-    
+
             <a href="#emergency__main__bottom" id="heres__what__wont__work__responseNextButton" class="emergency__main__bottom__responses--button">
               <h5 class="emergency__main__bottom__responses--title">
                 Next.
               </h5>
             </a>
           </div>
-  
+
         </div>
         <div id="heres__what__will__response" class="emergency__main__bottom__responses__item">
           <h2 class="emergency__main__bottom__responses__item--title">
@@ -153,10 +153,10 @@
               </a>
               <a href="https://neverfapdeluxe.com/guide" class="educate__yourself__container__item">
                 <p class="educate__yourself__container__item--title">/guide</p>
-              </a>    
+              </a>
             </div>
           </div>
-      
+
         </div>
       </div>
 
@@ -167,7 +167,7 @@
           NeverFap Deluxe is a comprehensive porn addiction recovery platform.
         </div>
       </footer>
-    
+
     </main>
 
   </body>
@@ -187,36 +187,21 @@
     var heres__what__wont__work__responsePreviousButton = document.querySelector('#heres__what__wont__work__responsePreviousButton');
     var heres__what__wont__work__responseNextButton = document.querySelector('#heres__what__wont__work__responseNextButton');
 
-    meditate.onclick = function(event) {
+    meditate.onclick = null;
 
-    };
+    heres__what__happened.onclick = heresWhatHappenedPrompt;
+    heres__what__wont__work.onclick = heresWhatWontWorkPrompt;
+    heres__what__will.onclick = heresWhatWillPrompt;
 
-    heres__what__happened.onclick = function(event) {
-      heresWhatHappenedPrompt();
-    };
-    heres__what__wont__work.onclick = function(event) {
-      heresWhatWontWorkPrompt();
-    };
-    heres__what__will.onclick = function(event) {
-      heresWhatWillPrompt();
-    };
+    heres__what__happened__responseNextButton.onclick = heresWhatWontWorkPrompt;
+    heres__what__wont__work__responsePreviousButton.onclick = heresWhatHappenedPrompt;
+    heres__what__wont__work__responseNextButton.onclick = heresWhatWillPrompt;
 
-    heres__what__happened__responseNextButton.onclick = function(event) {
-      heresWhatWontWorkPrompt();
-    };
-    heres__what__wont__work__responsePreviousButton.onclick = function(event) {
-      heresWhatHappenedPrompt();
-    };
-    heres__what__wont__work__responseNextButton.onclick = function(event) {
-      heresWhatWillPrompt();
-    };
-
-
-    function heresWhatHappenedPrompt() {
+    function heresWhatHappenedPrompt(event) {
       heres__what__happened.classList.remove('emergency__main__bottom__item');
       heres__what__wont__work.classList.remove('emergency__main__bottom__item--selected');
       heres__what__will.classList.remove('emergency__main__bottom__item--selected');
-      
+
       heres__what__happened.classList.add('emergency__main__bottom__item--selected');
       heres__what__wont__work.classList.add('emergency__main__bottom__item');
       heres__what__will.classList.add('emergency__main__bottom__item');
@@ -226,11 +211,11 @@
       heres__what__will__response.style.display = 'none';
     }
 
-    function heresWhatWontWorkPrompt() {
+    function heresWhatWontWorkPrompt(event) {
       heres__what__happened.classList.remove('emergency__main__bottom__item--selected');
       heres__what__wont__work.classList.remove('emergency__main__bottom__item');
       heres__what__will.classList.remove('emergency__main__bottom__item--selected');
-      
+
       heres__what__happened.classList.add('emergency__main__bottom__item');
       heres__what__wont__work.classList.add('emergency__main__bottom__item--selected');
       heres__what__will.classList.add('emergency__main__bottom__item');
@@ -240,11 +225,11 @@
       heres__what__will__response.style.display = 'none';
     }
 
-    function heresWhatWillPrompt() {
+    function heresWhatWillPrompt(event) {
       heres__what__happened.classList.remove('emergency__main__bottom__item--selected');
       heres__what__wont__work.classList.remove('emergency__main__bottom__item--selected');
       heres__what__will.classList.remove('emergency__main__bottom__item');
-      
+
       heres__what__happened.classList.add('emergency__main__bottom__item');
       heres__what__wont__work.classList.add('emergency__main__bottom__item');
       heres__what__will.classList.add('emergency__main__bottom__item--selected');
@@ -258,7 +243,7 @@
 </html>
 
 
-<!-- 
+<!--
 // var someone__to__talk__to = document.querySelector('#someone__to__talk__to');
 // var need__a__community__to__join = document.querySelector('#need__a__community__to__join');
 // var mental__health__services = document.querySelector('#mental__health__services');
