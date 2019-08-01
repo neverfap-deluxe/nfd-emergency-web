@@ -68,23 +68,27 @@
   width: 100%;
   cursor: pointer;
   transition: .15s;
-
-  .emergency__main__bottom__item--title {
-    
-  }
-
   .emergency__main__bottom__item:nth-child(1) {    
     flex: 1;
   }
-
+  
   .emergency__main__bottom__item:nth-child(2) {
     flex: 1;
   }
-
+  
   .emergency__main__bottom__item:nth-child(3) {
     flex: 1;
   }
+  
 }
+
+.emergency__main__bottom__item--title {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 
 .emergency__main__bottom__item:hover {
   background: cyan;
@@ -113,18 +117,18 @@
   background: -ms-linear-gradient(45deg, rgba(255,46,182,1) 0%, rgba(227,152,2,1) 100%); /* ie10+ */
   background: linear-gradient(45deg, rgba(255,46,182,1) 0%, rgba(227,152,2,1) 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E39802', endColorstr='#FF2EB6',GradientType=1 ); /* ie6-9 */
+}
 
-  .emergency__main__top__left--container {
+.emergency__main__top__left--container {
 
-    .emergency__main__top__left--title {
-      padding: 2rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      font-size: 8rem;
-      color: white;
-      text-shadow: 1px 1px cyan;
-      transition: text-shadow 8s;
-    }
+  .emergency__main__top__left--title {
+    padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px cyan;
+    transition: text-shadow 8s;
   }
 }
 
@@ -134,8 +138,7 @@
 
 // DO YOU NEED?
 .emergency__main__top__right {
-  display: flex;
-  flex-direction: column;
+  display: none;
 
   width: 200px;
   border-left: 4px solid cyan;
@@ -235,13 +238,13 @@
 }
 
 #heres__what__happened__response {
-  display: none;
+  display: block;
 }
 #heres__what__wont__work__response {
-  display: block;
+  display: none;
 }
 #heres__what__will__response {
-  display: block;
+  display: none;
 }
 
 .emergency__main__bottom__responses {
@@ -301,6 +304,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
   
   .educate__yourself__inner {
     display: flex;
@@ -336,4 +343,34 @@
   padding: 1rem;
 
   border-top: 4px solid black;
+}
+
+
+@media screen and (min-width: 420px) {
+  .emergency__main__top__left--container {
+    .emergency__main__top__left--title {
+      font-size: 6rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emergency__main__top__left--container {
+    .emergency__main__top__left--title {
+      font-size: 8rem;
+    }
+  }
+
+  .emergency__main__bottom__item--title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .emergency__main__top__right {
+    display: flex;
+    flex-direction: column;
+  }
 }

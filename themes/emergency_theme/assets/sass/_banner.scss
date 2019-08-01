@@ -1,11 +1,5 @@
 .guide__banner {
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-
-  // border-top: 4px solid $black-text;
-  // border-bottom: 4px solid $black-text;
+  margin-bottom: 2rem;
 
   background: -moz-linear-gradient(45deg, $magenta 0%, rgba(227,152,2,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, $magenta), color-stop(100%, rgba(227,152,2,1))); /* safari4+,chrome */
@@ -172,8 +166,8 @@
 
 @media screen and (min-width: 420px) {
   .guide__banner {
-    padding-left: 2rem;
-    // padding-right: initial;
+    padding: 0.5rem;
+
     .single__wrapper {
       margin: 2rem;
     }
@@ -232,6 +226,8 @@
 
 @media screen and (min-width: 768px) {
   .guide__banner {
+    padding: 2rem;
+
     .black__banner__title__container {
       width: 600px;
     }
@@ -249,13 +245,6 @@
     font-size: 1.4rem;
     line-height: 3.2rem;
     width: 60px;
-  }
-
-  .guide__banner {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }
 
