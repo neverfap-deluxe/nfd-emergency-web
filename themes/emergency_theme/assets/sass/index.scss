@@ -1,6 +1,7 @@
 @import "_global.scss";
 @import "_main.scss";
 @import "_banner.scss";
+@import "_plyr.scss";
 
 // // templates
 // @import "_header.scss";
@@ -257,22 +258,22 @@
     width: 600px;
 
     .emergency__main__bottom__responses__item--title {
-      font-size: 5rem;
-      line-height: 7.5rem;
+      font-size: 3rem;
+      line-height: 4.5rem;
       margin-top: 4rem;
       margin-bottom: 4rem;
     }
 
     h3 {
       font-size: 1.6rem;
-      line-height: 2rem;
+      line-height: 2.3rem;
       padding: 1rem;
       text-decoration: underline cyan;
     }
 
     p {
       font-size: 1.3rem;
-      line-height: 1.8rem;
+      line-height: 1.9rem;
     }
   }
 
@@ -339,10 +340,12 @@
 }
 
 .emergency__footer {
-  margin-top: 1.2rem;
+  margin-top: 4.2rem;
   padding: 1rem;
 
   border-top: 4px solid black;
+
+
 }
 
 
@@ -350,6 +353,15 @@
   .emergency__main__top__left--container {
     .emergency__main__top__left--title {
       font-size: 6rem;
+    }
+  }
+
+  .emergency__main__bottom__responses {    
+    .emergency__main__bottom__responses__item {
+      .emergency__main__bottom__responses__item--title {
+        font-size: 3rem;
+        line-height: 4.5rem;
+      }
     }
   }
 }
@@ -364,6 +376,15 @@
   .emergency__main__bottom__item--title {
     font-size: 2rem;
     line-height: 3rem;
+  }
+
+  .emergency__main__bottom__responses {    
+    .emergency__main__bottom__responses__item {
+      .emergency__main__bottom__responses__item--title {
+        font-size: 5.5rem;
+        line-height: 8rem;
+      }
+    }
   }
 }
 
